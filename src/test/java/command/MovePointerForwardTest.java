@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 public class MovePointerForwardTest {
 
     @Test
-    void execute(){
+    void testMovePointerForwardExecute(){
         Memory memory = new Memory();
         MovePointerForward movePointerForward = new MovePointerForward();
 

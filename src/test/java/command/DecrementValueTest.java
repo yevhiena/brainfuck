@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class DecrementValueTest {
 
     @Test
-    void execute(){
+    void testDecrementValueExecute(){
         Memory memory = new Memory();
         DecrementValue decrementValue = new DecrementValue();
 

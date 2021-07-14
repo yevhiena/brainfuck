@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MovePointerBackTest {
     @Test
-    void execute(){
+    void testMovePointerBackExecute(){
         Memory memory = new Memory();
         MovePointerBack movePointerBack = new MovePointerBack();
 

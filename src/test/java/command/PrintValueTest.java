@@ -9,7 +9,7 @@ import static org.mockito.Mockito.*;
 public class PrintValueTest {
 
     @Test
-    void execute(){
+    void testPrintValueExecute(){
         Memory memory = new Memory();
         PrintValue printValue = mock(PrintValue.class);
         doNothing().when(printValue).execute(memory);

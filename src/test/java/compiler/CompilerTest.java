@@ -2,6 +2,7 @@ package compiler;
 
 import command.Command;
 import command.impl.*;
+import exception.BrainfuckCompileCommandException;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -11,12 +12,12 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CompilerTest {
 
     @Test
-    void compile(){
+    void testCompile(){
 
         String program = "?";
         Compiler compiler = new Compiler();
 
-        Exception exception = assertThrows(RuntimeException.class, () ->
+        Exception exception = assertThrows(BrainfuckCompileCommandException.class, () ->
                 compiler.compile(program));
         assertEquals("Invalid command: " + program, exception.getMessage());
 
