@@ -2,6 +2,7 @@ package compiler;
 
 import command.Command;
 import command.impl.*;
+import exception.BrainfuckCompileCommandException;
 
 import java.util.*;
 
@@ -35,7 +36,7 @@ public class Compiler {
 
             if (instructionProcessor == null) {
 
-                throw new RuntimeException("Invalid command: " + brainfuckInstruction);
+                throw new BrainfuckCompileCommandException(brainfuckInstruction);
             }
 
             instructionProcessor.process(stack);
